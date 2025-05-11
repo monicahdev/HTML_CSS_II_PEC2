@@ -1,3 +1,4 @@
+/*
 /******** Global rules *******/
 
 /* Reset */
@@ -93,8 +94,6 @@ html, body {
     }
   }
 }
-
-
 
 /* Footer */
 
@@ -222,11 +221,11 @@ html, body {
   .efooter__logo { margin-bottom: $spacing-md; }
 }
 
-.img-fluid {
-  border: $img-border-width solid $img-border-color;
-  border-radius: $img-border-radius;
-}
+  .img-fluid {
+    border: $img-border-width solid $img-border-color;
+    border-radius: $img-border-radius;
+  }
 
-i {
-  margin-left: 0.75rem;
-}
+  i {
+    margin-left: 0.75rem;
+  }
