@@ -10,6 +10,7 @@ import * as bootstrap from 'bootstrap';
  * Write any other JavaScript below
  */
 //Script upcycling drag and drop
+
 document.addEventListener('DOMContentLoaded', function () {
   const dropTarget = document.getElementById('drop-target');
   
