@@ -25,8 +25,6 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
- @layer components;
-
 
 @import "layouts/global";
 @import './layouts/poster';
