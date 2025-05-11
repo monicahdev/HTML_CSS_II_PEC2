@@ -1,0 +1,12 @@
+@function hover-font($current-font) {
+  @if $current-font == $main-font {
+    @return $second-font;
+  } @else if $current-font == $second-font {
+    @return $main-font;
+  } @else {
+    @warn "Did not find the second-font.";
+    @return $main-font;
+  }
+}
+
+

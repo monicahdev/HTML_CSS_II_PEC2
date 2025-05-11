@@ -1,0 +1,48 @@
+@use 'sass:color';
+
+.eform__title {
+  color: color(display-p3 0.925 0.459 0.651); 
+}
+.eform__container {
+  max-width: $form-container-max-width;
+  padding: $form-container-padding;
+  margin: 0 auto;
+  container-type: inline-size;
+  container-name: eform;
+  background-color: $main-color;
+  border-radius: 5px;
+
+  @container eform (max-width: 600px) {
+    .eform__container {
+      padding: 1rem;
+    }
+    .eform__fieldset {
+      margin-bottom: 1rem;
+    }
+  }  
+}
+
+.eform__fieldset {
+  padding: 0;
+  margin-bottom: $form-field-margin-bottom;
+  border: none;
+  
+}
+
+.eform__button {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: $accent-color;
+    
+}
+
+.eform__button:hover {
+    background-color: $pop-color;
+}
+
+.eform__label-link {
+  color: $accent-color;
+  &:hover {
+    color: $pop-color;
+  }
+}

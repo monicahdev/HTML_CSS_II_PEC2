@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+
+    <title>Upcycling Week by Ecocircular 2025</title>
+    <meta name="description"
+        content="Conoce las jornadas de economía circular">
+    <link rel="icon" type="images/png" sizes="32x32" href="./assets/images/social.png"> 
+  </head>
+  <body>
+    <include src="./views/header.html"></include> 
+    <div class="econtainer container-fluid">
+      
+      
+      <h1 class="econtainer__title">Participa en el evento</h1>  
+      <section class="eform" id="form">
+        <div class="eform__container container">
+          <h2 class="eform__title text-center mb-4">Inscríbete a la Upcycling Week 2025</h2>  
+          <form class="eform__form" action="/submit_form" method="POST">
+            <fieldset class="eform__fieldset mb-3">
+              <label class="eform__label form-label" for="fullName">Nombre Completo</label>
+              <input class="eform__input form-control" type="text" id="fullName" name="fullName" placeholder="Fashion Ista" required>
+            </fieldset>
+      
+            <fieldset class="eform__fieldset mb-3">
+              <label class="eform__label form-label" for="email" >Correo Electrónico</label>
+              <input class="eform__input form-control" type="email" id="email" name="email" placeholder="correo@fashion.com" required>
+            </fieldset>
+      
+            <fieldset class="eform__fieldset mb-3">
+              <label class="eform__label form-label" for="phone" >Teléfono</label>
+              <input class="eform__input form-control" type="tel" id="phone" name="phone" placeholder="+34 123 456 789" required>
+            </fieldset>
+      
+            <fieldset class="eform__fieldset mb-3">
+              <label class="eform__label form-label" for="attendance">Día de asistencia</label>
+              <select class="eform__select form-control" id="attendance" name="attendance" required>
+                <option class="eform__option" value="" disabled selected>Elige una opción</option>
+                <option class="eform__option" value="29 de julio 2025">29 de julio 2025</option>
+                <option class="eform__option" value="30 de julio 2025">30 de julio 2025</option>
+                <option class="eform__option" value="31 de julio 2025">31 de julio 2025</option>
+                <option class="eform__option" value="29 y 30 de julio 2025">29 y 30 de julio 2025</option>
+                <option class="eform__option" value="29 y 31 de julio 2025">29 y 31 de julio 2025</option>
+                <option class="eform__option" value="30 y 31 de julio 2025">30 y 31 de julio 2025</option>
+                <option class="eform__option" value="29, 30 y 31 de julio 2025">29, 30 y 31 de julio 2025</option>
+              </select>
+            </fieldset>
+      
+            <fieldset class="eform__fieldset mb-3">
+              <label class="eform__label form-label" for="comments">Comentarios adicionales (opcional)</label>
+              <textarea class="eform__textarea form-control" id="comments" name="comments" rows="3" placeholder="Escribe aquí tus comentarios o preguntas"></textarea>
+            </fieldset>
+      
+            <fieldset class="eform__fieldset mb-3 form-check">
+              <input class="eform__input form-check-input" type="checkbox" id="terms" required>
+              <label class="eform__label form-check-label" for="terms">He leído y acepto los <a class="eform__label-link" href=#" target="_blank">términos y condiciones</a></label>
+            </fieldset>
+            <fieldset class="eform__fieldset text-center">
+              <button class="eform__button btn btn-primary" type="submit">Inscribirme</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      <hr class="eseparator">
+      
+      <section class="egame text-center">
+        <h2 class="egame__title">Juego de Reciclaje de Ropa</h2>
+        <p class="egame__text">Si te quedaste con las ganas de participar, pero el Centro de Convenciones te pilla lejos, aprovecha y envía estas prendas dañadas al contenedor de reciclaje.
+        ¿Cómo jugar? Haz clic sobre una prenda con el ratón o el dedo si estás en móvil. Mantén presionado y mueve la prenda arrastrándola por la pantalla. Suelta la prenda justo encima del contenedor de reciclaje.</p>
+        
+        <div class="egame__container egame__container--clothes" id="clothes-container">
+          
+          <img class="egame__img clothing-item" id="clothing1" draggable="true" src="/src/assets/images/abrigo.png" alt="Icono de una chaqueta azul con remiendos">
+          <img class="egame__img clothing-item" id="clothing2" draggable="true" src="/src/assets/images/bota.png" alt="Icono de una bota de piel con la capellada despegada de la suela">
+          <img class="egame__img clothing-item" id="clothing3" draggable="true" src="/src/assets/images/calcetinder.png" alt="Icono de un calceta con remiendos">
+          <img class="egame__img clothing-item" id="clothing4" draggable="true" src="/src/assets/images/calcetines.png" alt="Icono de calcetines rotos">
+          <img class="egame__img clothing-item" id="clothing5" draggable="true" src="/src/assets/images/cami.png" alt="Icono de una camiseta con remiendos">
+          <img class="egame__img clothing-item" id="clothing6" draggable="true" src="/src/assets/images/camisa.png" alt="Icono de una camise con remiendos">
+          <img class="egame__img clothing-item" id="clothing7" draggable="true" src="/src/assets/images/clothing.png" alt="Icono de un suéter con agujeros">
+          <img class="egame__img clothing-item" id="clothing8" draggable="true" src="/src/assets/images/medias.png" alt="Icono de calcetines estropeados">
+          <img class="egame__img clothing-item" id="clothing9" draggable="true" src="/src/assets/images/pantalones.png" alt="Icono de vaqueros con desgaste">
+          <img class="egame__img clothing-item" id="clothing10" draggable="true" src="/src/assets/images/ropa.png" alt="Icono de una camiseta y un vaquero con manchas">
+          <img class="egame__img clothing-item" id="clothing11" draggable="true" src="/src/assets/images/seta.png" alt="Icono de una camiseta con rotos">
+          <img class="egame__img clothing-item" id="clothing12" draggable="true" src="/src/assets/images/zapatos.png" alt="Icono de unas zapatillas rotas y dañadas">
+
+        </div>
+    
+        <div class="egame__container egame__container--recycle" id="recycle-bin">
+          <div class="egame__drop-target" id="drop-target">
+            <img class="egame__drop-targetimg" src="/src/assets/images/reciclaje.png" alt="Reciclaje" class="recycle-bin-img">
+          </div>
+          <div class="egame__success-message" id="success-message">¡A un paso del Upcycling!</div>
+        </div>
+      </section> 
+      
+    </div>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

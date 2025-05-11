@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+
+    <title>Upcycling Week by Ecocircular 2025</title>
+    <meta name="description"
+        content="Conoce las jornadas de economía circular">
+    <link rel="icon" type="images/png" sizes="32x32" href="./assets/images/social.png"> 
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+    <include src="./views/header.html"></include>   
+    <div class="econtainer container-fluid">
+      
+      <h1 class="econtainer__title">Upcycling Week by Ecocircular</h1>
+      <p class="econtainer__text">Upcycling Week 2025 - Edición Moda. Visítanos del 29 al 31 de julio en el Centro de Convenciones.</p>
+      <section class="eposter">
+          <div class="eposter__wrapper">
+            <h2 class="eposter__subtitle">Panel de ponentes</h2>
+            <p class="eposter__text">Aprende junto al panel de expertos en moda circular.</p>
+            <picture>
+              <source srcset="./assets/images/conferencia.jpg?as=webp" type="image/webp">
+              <img class="eposter__img" src="/src/assets/images/conferencia.jpg" alt="Mujeres en una reunión de trabajo">
+            </picture>
+            <a class="eposter__link-item" href="ponentes.html">¡Aprende!</a>
+          </div>
+
+          <div class="eposter__wrapper">
+            <h2 class="eposter__subtitle">Moda circular</h2>
+            <p class="eposter__text">Descubramos cómo hacer moda sostenible, circular y cool.</p>
+            <picture>
+              <source srcset="./assets/images/upcycling.jpg?as=webp" type="image/webp">
+              <img class="eposter__img" src="/src/assets/images/upcycling.jpg" alt="Trozos de tela de varios colores"> 
+            </picture>
+            <a class="eposter__link-item" href="articulo.html">¡Conoce!</a>
+          </div>  
+        
+        <div class="eposter__wrapper">
+          <h2 class="eposter__subtitle">Sé Ecocircular</h2>
+          <p class="eposter__text">¡El cambio comienza por ti!</p>
+          <picture>
+            <source srcset="./assets/images/upcycling2.jpg?as=webp" type="image/webp">
+            <img class="eposter__img" src="/src/assets/images/upcycling2.jpg" alt="Ilustración que pone 'There is no waste in nature [En la naturaleza nada se desperdicia.]'"> 
+          </picture>
+          
+          <a class="eposter__link-item" href="formulario.html#form">¡Participa!</a>
+        </div>
+      </section>
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->

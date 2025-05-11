@@ -1,0 +1,232 @@
+/******** Global rules *******/
+
+/* Reset */
+* { box-sizing: border-box; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+  line-height: 1.5;
+  background-color: $second-color;
+}
+
+.econtainer {
+  width: 100%;
+  max-width: 1200px;
+  padding: $spacing-md;
+  margin: 0 auto;
+}
+
+.econtainer__title {
+  margin-bottom: $spacing-sm;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $main-color;
+  text-align: center;
+}
+
+.econtainer__text {
+  margin-bottom: $spacing-lg;
+  font-size: 1.2rem;
+  color: $main-color;
+  text-align: center;  
+}
+
+/* Header */
+.eheader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  margin-bottom: 3.5rem;
+  background-color: $pop-color;
+  border-radius: 5px;
+}
+
+.eheader__logo {
+  display: block;
+  max-width: 100px;
+  height: auto;
+}
+
+.eheader__nav {
+  flex-grow: 1;
+
+  .eheader__nav-list {
+    
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    
+    
+  }
+
+  .eheader__nav-item {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .eheader__nav-link {
+    font-family: $second-font;
+    color: $second-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover { color: $accent-color; }
+  }
+  @media (max-width: 768px) {
+    .eheader {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .eheader__nav-list {
+      flex-direction: column;
+      align-items: flex-end; 
+      width: 100%;
+    }
+  }
+}
+
+
+
+/* Footer */
+
+.efooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-md;
+  text-align: center;
+  background-color: $pop-color; 
+}
+
+.efooter__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+.efooter__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $spacing-sm; 
+}
+
+.efooter__logo { margin-right: $spacing-md; }
+
+.efooter__list {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  
+}
+
+.efooter__item { margin: 0 $spacing-sm; }
+
+.efooter__link {
+  margin-left: 1rem;
+  font-family: $second-font;
+  font-size: 3rem;
+  font-weight: 600;
+  color: $second-color;
+  text-transform: uppercase; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.efooter__link:hover { color: $accent-color; }
+
+.efooter__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $spacing-sm; 
+}
+
+.efooter__social-list {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+}
+
+.efooter__social-item { margin: 0 $spacing-lg; }
+
+.efooter__social-link {
+  font-size: 1.5rem;
+  color: $second-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.efooter__social-link:hover { color: $accent-color; }
+
+.efooter__author {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.efooter__text {
+  margin: 0;
+  font-family: $main-font;
+  font-size: 1.5rem;
+  color: $second-color;
+}
+
+.efooter__author-link {
+  font-family: $second-font;
+  font-size: 1.5rem;
+  color: $second-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.efooter__author-link:hover { color: $accent-color; }
+
+@media screen and (max-width: $breakpoint-md) {
+  
+  .efooter {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .efooter__wrapper {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .efooter__nav, .efooter__social {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .efooter__social-item, .efooter__list {
+    flex-direction: column; 
+    align-items: center;
+    margin: $spacing-sm 0;
+    font-size: 2rem;     
+    
+  }
+
+  .efooter__logo { margin-bottom: $spacing-md; }
+}
+
+.img-fluid {
+  border: $img-border-width solid $img-border-color;
+  border-radius: $img-border-radius;
+}
+
+i {
+  margin-left: 0.75rem;
+}

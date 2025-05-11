@@ -1,0 +1,69 @@
+@use 'sass:color';
+
+.eseparator {
+  width: 99%;
+  height: 1rem;
+  margin: 2rem auto;
+  background-color: color(display-p3 0.925 0.459 0.651); 
+  border: none;
+  border-radius: 1px;
+}
+
+.egame {
+  padding: 2svh;
+  color: color(display-p3 0.925 0.459 0.651); 
+  background-color: color(display-p3 0.835 0.918 0.949);
+  border-radius: 5px;
+}
+
+.egame__text {
+  color: color(display-p3 0.835 0.918 0.949);
+  background-color: color(display-p3 0.769 0.271 0.412);
+}
+.egame__container--clothes { margin-bottom: 3lvh; }
+
+.egame__img {
+  width: 15dvw;
+  max-width: 180px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: color(display-p3 1.0 0.835 0.310);
+  border: 1px solid color(display-p3 0.925 0.459 0.651); 
+  border-radius: 15px;
+}
+
+.egame__container--recycle {
+  position: relative;
+  display: inline-block;
+}
+
+.egame__drop-targetimg {
+  width: 25svw;
+  height: 25svw;
+}
+
+.egame__success-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: $main-color;
+  background-color: $accent-color;
+  transform: translate(-50%, -50%);
+}
+
+@container egame (max-width: 768px) {
+  .egame__img {
+    width: 60px;
+    margin: 6px;
+  }
+
+  .egame__drop-targetimg {
+    width: 200px;
+    height: 200px;
+  }
+
+  .egame__success-message { font-size: 16px; }
+}

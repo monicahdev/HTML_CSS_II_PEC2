@@ -1,0 +1,43 @@
+@use 'sass:color';
+
+
+.eattributions__table-wrapper {
+  container-type: inline-size;
+  width: 100%;
+
+  @container (max-width: 800px) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+  .eattributions__table {
+    display: block;
+    width: 100%;  
+    min-width: 700px;
+    
+    border-collapse: collapse;
+    border: $table-border-width solid $table-border-color;
+    border-radius: $table-border-radius;
+
+      .eattributions__table-caption, .eattributions__table-cell {
+      padding: $table-cell-padding-y $table-cell-padding-x;
+      color: $second-color;
+      background-color: $main-color;
+      border: $table-border-width solid $table-border-color;
+      
+  
+      .eattributions__table-link {
+        color: $accent-color;
+        text-decoration: underline;
+  
+      }
+      .eattributions__table-link:hover {
+        color: $pop-color;
+        text-decoration: none;
+      }
+    }
+     
+    .eattributions__table-head {
+      .eattributions__table-cell { background-color: $main-color; }
+    }
+  }

@@ -1,0 +1,103 @@
+@use 'sass:color';
+
+.earticle {
+  font-family: $main-font;
+  line-height: 1.6;
+  background-color: $main-color;
+  container-type: inline-size;
+
+  @container (min-width: 600px) {
+    :is(.earticle__title, .earticle__text) { font-size: 2.25rem; }
+
+    .earticle__subtitle { font-size: 2rem; }
+ 
+    .earticle__list { padding-left: $spacing-lg; }
+
+    .earticle__quote { font-size: 1.5rem; }
+
+    .earticle__cite { font-size: 1.1rem; }
+  }
+
+  @container (max-width: 599px) {
+    .earticle__title {
+      margin-top: $spacing-md;
+      font-size: 1.75rem;
+    }
+
+    .earticle__subtitle { font-size: 1.5rem; }
+
+    .earticle__text { font-size: 1.6rem; }
+
+    .earticle__list { padding-left: $spacing-sm; }
+
+    .earticle__quote { font-size: 1.2rem; }
+
+    .earticle__cite { font-size: 1rem; }
+  }
+}
+
+:is(.earticle__title, .earticle__subtitle) {
+  margin-top: $spacing-lg;
+  margin-left: $spacing-md;
+  color: $dark-color;
+}
+
+.earticle__title {
+  margin-right: $spacing-md;
+  margin-bottom: $spacing-md;
+  font-size: 2rem;
+}
+
+.earticle__text {
+  padding-bottom: 0.5rem;
+  margin: $spacing-md $spacing-md $spacing-lg;
+  font-size: 2rem;
+  color: $second-color;
+
+  .earticle__link { 
+    color: $accent-color;
+    &:hover { color: $pop-color; }
+  }
+}
+
+.earticle__list {
+  padding-left: $spacing-lg;
+  color: $second-color;
+
+  .earticle__item {
+    margin-bottom: $spacing-sm;
+    font-size: 1rem;
+  }
+}
+
+.earticle__quote {
+  padding-left: 1rem;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: $dark-color;
+  border-left: 5px solid $accent-color;
+  
+}
+
+.earticle__cite {
+  display: block;
+  margin-top: $spacing-md;
+  margin-bottom: $spacing-lg;
+  font-size: 1rem;
+
+  .earticle__cite-link {
+    color: $second-color;
+    text-decoration: none;
+
+  }
+  .earticle__cite-link:hover {
+    color: $pop-color;
+    text-decoration: none;
+  }
+}
+
+.earticle__cite:has(.earticle__cite-link) {
+  padding-left: 1rem;
+  color: $main-color;
+  background-color: $accent-color;
+}
