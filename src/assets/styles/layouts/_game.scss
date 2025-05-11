@@ -14,6 +14,20 @@
   color: color(display-p3 0.925 0.459 0.651); 
   background-color: color(display-p3 0.835 0.918 0.949);
   border-radius: 5px;
+  
+  @container egame (max-width: 768px) {
+    .egame__img {
+      width: 60px;
+      margin: 6px;
+    }
+  
+    .egame__drop-targetimg {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .egame__success-message { font-size: 16px; }
+  }
 }
 
 .egame__text {
@@ -54,16 +68,3 @@
   transform: translate(-50%, -50%);
 }
 
-@container egame (max-width: 768px) {
-  .egame__img {
-    width: 60px;
-    margin: 6px;
-  }
-
-  .egame__drop-targetimg {
-    width: 200px;
-    height: 200px;
-  }
-
-  .egame__success-message { font-size: 16px; }
-}
