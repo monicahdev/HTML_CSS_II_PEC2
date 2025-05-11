@@ -20,7 +20,8 @@
       <section class="eform" id="form">
         <div class="eform__container container">
           <h2 class="eform__title text-center mb-4">Inscríbete a la Upcycling Week 2025</h2>  
-          <form class="eform__form" action="/submit_form" method="POST">
+            <form class="eform__form" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
             <fieldset class="eform__fieldset mb-3">
               <label class="eform__label form-label" for="fullName">Nombre Completo</label>
               <input class="eform__input form-control" type="text" id="fullName" name="fullName" placeholder="Fashion Ista" required>
