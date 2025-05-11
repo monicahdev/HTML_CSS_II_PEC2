@@ -67,30 +67,4 @@ document.addEventListener('DOMContentLoaded', function () {
       draggedItem.style.display = 'none';
     }, 500);
   }
-
-  // Versión touch para móviles/tabletas
-  function touchStart(e) {
-    e.preventDefault();
-    const touch = e.touches[0];
-    draggedItem = e.target;
-    
-
-  }
-
-  function touchMove(e) {
-    e.preventDefault();
-    if (draggedItem) {
-      const touch = e.touches[0];
-      draggedItem.style.position = 'absolute';
-      draggedItem.style.top = `${touch.clientY - draggedItem.offsetHeight / 2}px`;
-      draggedItem.style.left = `${touch.clientX - draggedItem.offsetWidth / 2}px`;
-    }
-  }
-
-  function touchEnd(e) {
-    e.preventDefault();
-    if (draggedItem) {
-      dropItem(e); 
-    }
-  }
 });
